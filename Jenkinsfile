@@ -9,7 +9,7 @@ pipeline{
                 echo "hello declerative pipeline"
             }
         }
-        Stage("maven build"){
+        stage("maven build"){
             steps{
                 sh "mvn clean package"
             }
