@@ -6,12 +6,12 @@ pipeline{
     stages{
         stage("welcome"){
             steps{
-                echo "hello declerative pipeline"
+                echo "hello multipranch pipeline dev file"
             }
         }
         stage("maven build"){
             steps{
-                sh "mvn clean package"
+                sh "perform maven options"
             }
         }
         
