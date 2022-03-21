@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage("welcome"){
             steps{
-                echo "hello multipranch pipeline dev file"
+                echo "hello multipranch pipeline this is from stagefile"
             }
         }
         stage("maven build"){
