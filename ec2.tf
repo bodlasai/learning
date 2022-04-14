@@ -1,7 +1,12 @@
 resource "aws_instance" "myec2" {
-ami="ami-0d718c3d715cec4a7"
-instance_type="t2.micro"
- }
-output "instance_ip_addr" {
-  value = aws_instance.myec2.public_ip
+    ami = var.amiid
+    instance_type=var.instnaceid
+    user_data     = <<EOF
+               #!/bin/bash
+               sudo yum update -y
+               sudo yum install docker -y
+               sudo service docker start
+               sudo service docker status
+               sudo usermod -a -G docker ec2-user
+   EOF
 }
