@@ -1,1 +1,16 @@
-test1
+name: Build
+on: 
+  push:
+    branches:
+     - dev
+jobs:
+  build:
+    name: Build
+    runs-on: ubutu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: test
+        uses: bodlasai/github-actions@master
+     
