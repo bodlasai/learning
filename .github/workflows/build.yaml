@@ -8,6 +8,8 @@ jobs:
     name: Build
     runs-on: ubutu-latest
     steps:
+      - name: echo the sting
+        run: echo "hello git actions"
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
