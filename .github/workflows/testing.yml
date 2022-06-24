@@ -1,0 +1,8 @@
+name: Call a reusable workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-workflow:
+    uses: bodlasai/github-actions/.github/workflows/simple.yml@master
