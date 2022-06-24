@@ -7,7 +7,7 @@ jobs:
    steps:
     - name: Checkout using the Template File 
       uses: actions/checkout@v2 
-  checkout:
+  call-workflow:
     uses: bodlasai/github-actions/.github/workflows/simple.yml@master
   
   
