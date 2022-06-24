@@ -5,12 +5,10 @@ on:
      - dev
 jobs:
   build:
-    name: Build
-    runs-on: ubutu-latest
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-      - name: test
-        uses: bodlasai/github-actions@master
-     
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      - name: testing the integration 
+        uses: bodlasai/github-actions/.github/workflows/simple.yml@master
