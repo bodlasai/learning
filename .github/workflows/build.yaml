@@ -4,15 +4,12 @@ on:
     branches:
      - dev
 jobs:
-  build:
-    name: Build
-    runs-on: self-hosted
+  call-workflow-passing-data:
+    runs-on: ubuntu-latest
     steps:
-      - name: echo the sting
-        run: echo "hello git actions"
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-      - name: test1
-        uses: bodlasai/github-actions@master
-     
+      - uses: actions/checkout@v2
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      - name: testing the integration 
+        uses: bodlasai/github-actions/.github/workflows/simple.yml@master
