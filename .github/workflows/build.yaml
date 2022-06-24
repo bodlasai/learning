@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: ubutu-latest
+    runs-on: self-hosted
     steps:
       - name: echo the sting
         run: echo "hello git actions"
