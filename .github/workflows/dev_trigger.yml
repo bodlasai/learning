@@ -6,6 +6,6 @@ on:
 jobs:
   builds:
     uses: bodlasai/github-actions/.github/workflows/dev.yml@master
-    with:
-      AWS_ACC_KEY: $${{ secrets.AWS_ACC_KEY }}
-      AWS_SEC_KEY: ${{ secrets.AWS_SEC_KEY }}
+#     with:
+#       AWS_ACC_KEY: $${{ secrets.AWS_ACC_KEY }}
+#       AWS_SEC_KEY: ${{ secrets.AWS_SEC_KEY }}
