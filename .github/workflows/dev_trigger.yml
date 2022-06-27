@@ -5,8 +5,7 @@ on:
 
 jobs:
   builds:
-    uses: bodlasai/github-actions/.github/workflows/sample1.yml@master
+    uses: bodlasai/github-actions/.github/workflows/dev.yml@master
     with:
-     secrets:
-      AWS_ACCESS_KEY_ID: $${{ secrets.AWS_ACC_KEY }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SEC_KEY }}
+      AWS_ACC_KEY: $${{ secrets.AWS_ACC_KEY }}
+      AWS_SEC_KEY: ${{ secrets.AWS_SEC_KEY }}
