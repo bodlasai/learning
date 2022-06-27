@@ -1,0 +1,12 @@
+name: Call a reusable workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  builds:
+    uses: bodlasai/github-actions/.github/workflows/sample1.yml@master
+    with:
+     secrets:
+      AWS_ACCESS_KEY_ID: $${{ secrets.AWS_ACC_KEY }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SEC_KEY }}
