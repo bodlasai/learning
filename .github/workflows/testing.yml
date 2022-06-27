@@ -5,4 +5,4 @@ on:
 
 jobs:
   builds:
-    uses: bodlasai/github-actions/.github/workflows/simple1.yml@master
+    uses: bodlasai/github-actions/.github/workflows/sample1.yml@master
