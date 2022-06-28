@@ -1,11 +1,19 @@
-name: Call a reusable workflow
+name: s3_inputs_trigger
 
 on:
   workflow_dispatch:
 
 jobs:
-  builds:
+  call-workflow-passing-data:
     uses: bodlasai/github-actions/.github/workflows/test_s3.yml@main
-#     with:
-#      username: saibucket0100
-#      foldername: test1234
+    with:
+      username: saibucket0100/testing2
+# jobs:
+#   builds:
+#     uses: bodlasai/github-actions/.github/workflows/test_s3.yml@main
+#      with:
+#       username: saibucket0100/testing2
+#      #foldername: test1234
+
+    #uses: bodlasai/github-actions/.github/workflows/test_s3.yml@main
+   
