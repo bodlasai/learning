@@ -7,5 +7,5 @@ jobs:
   builds:
     uses: bodlasai/github-actions/.github/workflows/sample1.yml@master
     with:
-     bucketname: sai123
+     bucketname: saibucket0100
 #      foldername: test1234
