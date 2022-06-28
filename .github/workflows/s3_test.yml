@@ -4,4 +4,4 @@ on:
   workflow_dispatch:
 jobs:
   testing:
-   - uses: bodlasai/github-actions/.github/workflows/test_s3.yml@mai
+   - uses: bodlasai/github-actions/.github/workflows/test_s3.yml@main
