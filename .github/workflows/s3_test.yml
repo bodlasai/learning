@@ -8,6 +8,7 @@ jobs:
     uses: bodlasai/github-actions/.github/workflows/test_in.yml@main
     with:
       username: saibucket0100/testing2
+    secrets: inherit
 # jobs:
 #   builds:
 #     uses: bodlasai/github-actions/.github/workflows/test_s3.yml@main
