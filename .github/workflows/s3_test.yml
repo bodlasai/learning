@@ -7,5 +7,5 @@ jobs:
   builds:
     uses: bodlasai/github-actions/.github/workflows/test_s3.yml@main
     with:
-     bucketname: saibucket0100
+     username: saibucket0100
 #      foldername: test1234
