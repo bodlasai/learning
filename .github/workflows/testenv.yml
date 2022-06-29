@@ -1,0 +1,13 @@
+name: s3_inputs_trigger_env_variables
+
+on:
+  workflow_dispatch:
+jobs:
+  call-workflow-passing-data:
+    uses: bodlasai/github-actions/.github/workflows/test_s3.yml@main
+    with:
+      username: saibucket0100/testing2 
+      region_name: 'us-east-2'
+    secrets:
+      AWS_ACC_KEY: ${{ secrets.AWS_ACC_KEY }}
+      AWS_SEC_KEY: ${{ secrets.AWS_SEC_KEY }}
