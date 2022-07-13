@@ -1,11 +1,10 @@
-name: testing sonar
-
+name: testing sonar1
 on:
   workflow_dispatch:
 
 jobs:
   builds:
-    uses: bodlasai/github-actions/.github/workflows/testing_build.yml@master
+    uses: bodlasai/github-actions/.github/workflows/blank.yml@master
     secrets:
       AWS_ACC_KEY: $${{ secrets.AWS_ACC_KEY }}
       AWS_SEC_KEY: ${{ secrets.AWS_SEC_KEY }}
