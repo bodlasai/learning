@@ -5,6 +5,8 @@ on:
 jobs:
   builds:
     uses: bodlasai/github-actions/.github/workflows/blank.yml@main
+    with:
+      username: "sai"
     secrets:
       AWS_ACC_KEY: $${{ secrets.AWS_ACC_KEY }}
       AWS_SEC_KEY: ${{ secrets.AWS_SEC_KEY }}
